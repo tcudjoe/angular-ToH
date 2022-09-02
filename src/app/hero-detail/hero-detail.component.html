@@ -2,12 +2,12 @@
     <div *ngIf="hero" class="row">
         <div class="col-8" >
             <h2>{{ hero.name | uppercase }}'s details</h2>
-            <!-- <div> id: {{ hero.id }}</div> -->
             <div class="description">
                 <p>{{ hero.description }}</p>
             </div>
             <div>
-                <label for="hero-name">Hero name:</label>
+                <label for="hero-name">Change Hero Name:</label>
+                <br>
                 <input id="name" [(ngModel)]="hero.name" placeholder="name">
             </div>
             <br>
