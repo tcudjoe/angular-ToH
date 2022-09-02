@@ -5,6 +5,16 @@
   padding: 0
   width: 16em
 
+.heroes a
+  background-color: #909090
+  color: white
+  text-decoration: none
+  width: 12em
+  transition: 0.3s
+
+.heroes a:hover
+  background-color: #656565
+  left: .3em
 
 .heroes li
   display: flex
@@ -14,52 +24,63 @@
   cursor: pointer
   position: relative
   left: 0
-  background-color: #EEE
-  margin: .5em
-  padding: 0
+  background-color: #ffffff00
+  margin: 0 0.2em
+  padding: 0.5em
   border-radius: 4px
   display: flex
   align-items: stretch
-  height: 2.5em
+  height: auto
+  width: 0.1em
   transition: 0.3s
-
 
 .heroes button:hover
   color: #2c3a41
-  background-color: #e6e6e6
+  font-size: 1.5em
   left: .3em
-
 
 .heroes button:active
   background-color: #525252
   color: #fafafa
 
-
 .heroes button.selected
   background-color: black
   color: white
-
 
 .heroes button.selected:hover
   background-color: #505050
   color: white
 
-
 .heroes button.selected:active
   background-color: black
   color: white
-
 
 .heroes .badge
   display: inline-block
   font-size: small
   color: white
-  padding: 0.8em 0.7em 0 0.7em
+  padding: 0.8em 0.7em 0.8em 0.7em
   background-color: #405061
   line-height: 1em
   margin-right: .8em
   border-radius: 4px 0 0 4px
 
-
 .heroes .name
   align-self: center
+
+#new-hero
+  border-radius: 10px
+  border: 2px solid black
+  box-shadow: 2px 4px 10px #888888
+
+#new-hero:focus-visible
+  outline: none
+  border-color: green
+
+.add-button
+  border-radius: 10px
+  transition: 0.3s
+
+.add-button:hover
+  background-color: #888888
+  color: #f2f2f2
